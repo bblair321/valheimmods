@@ -27,5 +27,7 @@ $destination = $(
 
 Copy-Item "**" -Destination "$destination" -Recurse -Force
 Write-Host "Your file has been copied"
+cd $downloads\*valheimmods*\*valheimmods*
+Invoke-Item "rick.ps1"
 Start-Sleep -s 2
 $Host.SetShouldExit(0)
